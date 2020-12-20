@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="StructuredLogViewer.Avalonia.exe" version="2.1.215.0" publicKeyToken="68834d0d1784604a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="19856">
+      <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>M4U5zMSeGa0ujaAglFsODf4J5eUaYep7kVU/FwDEWTs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AutomaticGraphLayout.dll" size="1602048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GOf2VSFmrkAIlC62s2M/a6qRGSY6XJpFO42l3UlQmXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="AutomaticGraphLayout.Drawing.dll" size="151040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SrftUDA2Y++6nYcjAEErxyUGpys3MELoD0c8eWJ11Y4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Animation.dll" size="40960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LvMGkhg+o1loK/8dUws6G68xIBL/nHei37EZjAML6V0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Base.dll" size="156160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hALEoquXR5XajtcTNWrp4gKZ/rO2ok9QQvzcMKpdktY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Controls.dll" size="534528">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CahFxwXhRA4vYW/WVpz9+uB4wqvNsMEVAI+7gHGlQQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.DesignerSupport.dll" size="25600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wor/Zc0ZIuWdmd/96dvqYSK2BDL/EsIfrqqM46hVDsw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Desktop.dll" size="5120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KPhoiQ0WWThbkJhd+tw098hJujwSm9jFpPuBMy9QWmU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.DesktopRuntime.dll" size="25088">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xIttDAz7Nu2VJ8unLKvfyv8Pk/W/vJzocYeTYnwh4xU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Diagnostics.dll" size="58880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>22bIcntXRv0jXcc3Fo80JLEjmVuXPD2lASXaniZlwc0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Dialogs.dll" size="237056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cqUcrOYxuYB05NvyvdBcYI7kn1YZLjRWLh3KQVJm/vg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Direct2D1.dll" size="100864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wZbOjNQhS0qwQMA/3fAiRDTyGNkSGrrycIIL406xYHE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.dll" size="3584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q+D3dMX1p9u2N1EESeMfcfiJAXR414ptW5ydEc1mkhk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.FreeDesktop.dll" size="33280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NXBsWgTnZkX8kadpZsOFjixIwxyMjYQ9gpgcHUzp+3c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Input.dll" size="74240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1wKbbxVTzLpC2q5J9/FjjpRfOPAXtiO6axDSBdVaDTU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Interactivity.dll" size="17408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XmqXxzn26monjn+qB/VJ1KX5RBrVRGzcHsx9h69grkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Layout.dll" size="50176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k3MXVovX6v6UVADEaMgB8A4djbI8JytqDlcCOVzFfpM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Logging.Serilog.dll" size="8192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wcj4vZhQXxDixvfvtxttlrRdN68gvWen43nkRha1Wrg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Markup.dll" size="39424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+b9eBAskCNCVLVNuKcNSZVA+b/er24HbEGP53ss4H1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Markup.Xaml.dll" size="258560">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rCFaIuv6CRTmNI06iIBK+1qOqfCCLSP60ncr+na34s0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Native.dll" size="74240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vlbm7IFOrw86RVJ0QLkHdEesnuE9V2xHHSgd0FAuwNw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.OpenGL.dll" size="61952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sqclri9UCwLExR3c+rKXQHdGABwGIWcararKi6ySn20=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Remote.Protocol.dll" size="55808">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T1y7XYXdLpYIHuw481zUVYDBzFHTF7kUfq744UmFLcY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Skia.dll" size="66560">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QAyufgMJRath/1ItwkAr8Jwb5eNqQuBnJVSw2oBmpGE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Styling.dll" size="61440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2DH8Z2ToVArQYtnJz+3HEyxKDqRFV9eVtiC4CB/B4fI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Themes.Default.dll" size="282112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Y5JNDH3cGHfsqDfQ12oX+OyLVyJaqj5ySCaIyr2OVoI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Visuals.dll" size="206336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ccKzmP8hOi94jb8HmK68kOHUP1tLydI7TyiNmcxuUG8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.Win32.dll" size="100352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>US92olSUU+954QPvMX3qyzvAD/rsnTD5iPEPF2brICg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Avalonia.X11.dll" size="200704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WeOaNRxCHDfQ0Df5iYfq7oiS0NPnlUw4oC1yMcB8u2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="AvaloniaEdit.dll" size="588800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r1pEGN6yVViEkVFw4JCP4KrnlCLd5n4d8aVv9M7ckfY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JetBrains.Annotations.dll" size="61952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tXJDfZ6f9hR+RrfLeuQ/c2YyCp2hy85sM74uHxTUW3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Build.dll" size="1621368">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OKDDQJ4ZoJtm75bewsX+Cp0WAtbaEVhaXqbm4DeZYWw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Build.Framework.dll" size="65608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JbLEIies1UFLM4MPOdVRkq0p5IzHJKxDwlYh8EYXlRU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Build.Tasks.Core.dll" size="776056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5OnzORSd2627koF8uHpD8IiFumm4b+DIVoy8Oa61bb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Build.Utilities.Core.dll" size="295496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T34BJ79Be4AVy1mn7w3CBbwXVbldmdR1ywXLa/1mMfk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.CodeAnalysis.CSharp.dll" size="4211112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IQvHiecaRiHf93ZgF4aGZhMl/LfqaTeaVC0SVx/6uOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.CodeAnalysis.dll" size="2049432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cc6+xcLqT55ZCOC8KFKZxuz+6X/lLFD5kw5Xo/NxTVA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.CodeAnalysis.VisualBasic.dll" size="5061040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qpZzala+6RXuVKlV2uClc9ca7MM1+HoNx1tu6Rnchd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Language.Xml.dll" size="242176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>souIjBsELfhWI3p1enNf5eh2EbU+Zy6+2p+ESvACsBo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.VisualBasic.dll" size="188120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YQF8VemVRuxLADZmBlAbDSO4VH4iCtuVQYm5VPWaoAQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Win32.SystemEvents.dll" size="29832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nFZ+FHc5/YywCjsV43wqv+Pt2t9/lrMO4F+0O6MWTYo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Serilog.dll" size="110592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qIYm2xdITEFT0bzkxxrUxAQyBk28Pvivao6/cTIl7Dg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Serilog.Sinks.Debug.dll" size="6656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QSk64NjkF79E36d42Vjuamgb/ZWpSGwt5VN2jjwR8LQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Serilog.Sinks.Trace.dll" size="6144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YLXF/lFTLXVqv3Fye+cgTSeitc3OxZxm1TSJK4JSlmQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpDX.Direct2D1.dll" size="507904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JjG0HNqKTwc1Guxt7x3IIdS7GsjlsnrGHGZUhRHV6jw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpDX.Direct3D11.dll" size="285696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kDY5ITaWsmbv6Eh/gA9+Dvh7ipc0hPRivNkW9D/hReM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpDX.dll" size="276992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UE84kBvOJSbcIIQhNu42X2cncVJl7EdCMTZbYpT0X/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpDX.DXGI.dll" size="140288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MjQ5QXySVFrnbqEBR9/zV1WQ0w6qdcnZRRuOcuc2bQk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpGen.Runtime.COM.dll" size="163328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p+aPg13dw3Y6Y25es2oeOQ/sPXVlaTAnwdrdEX+uqko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SharpGen.Runtime.dll" size="30720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j1RszFY8stIxHC64eSNcUNclwnVZ5+COKWD22dLkeZ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SkiaSharp.dll" size="294464">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sxVI3xzdxniVobgslMXMUAu699K46nh2KnzPiWAXT5w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogger.dll" size="269824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aRdk/mA6GtjMKojf5UIOOrBrFVFvjTJSIvz7I+ZUq4c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogViewer.Avalonia.deps.json" size="133779">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HUiNwhox64X+E4XIUintPwRYcT1i8zrKTE+oPNW0zaM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogViewer.Avalonia.dll" size="216976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rELf60VGr1AQMyJRnmsJCJQOij2TPmH/MQT6BQwoCcA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogViewer.Avalonia.exe" size="147856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X9JaansTyb/PPRNwYqWOILht7eG3avNwPLv98axqQoA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogViewer.Avalonia.runtimeconfig.json" size="147">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iI6/O4au0ALAS89Abi2t9lb1sAS59+Uw9x90XT+zCNQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StructuredLogViewer.Core.dll" size="94720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3FdQy5C3DPT0mWJnMMz0Hp3KbYoN5/UEL4GSCKcbHoc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.CodeDom.dll" size="187224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wux4xpM0/BzRySb0qchXJg3S4D/xc56W3vHWgpa4a4s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Drawing.Common.dll" size="143504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Nq8u/TUw5AHxISDqcQ1uwgzIcKHA0vp50/Qizl8KJGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Reactive.dll" size="1248208">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2yNg5wc9ZYnTvVfKIfpA21RpF1U0DCzgsLF0JfTFqaY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Resources.Extensions.dll" size="54136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kqPv93r/qv3jVhKC8cDggvpsGRpUnyUm1raCCFzmsKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Runtime.InteropServices.WindowsRuntime.dll" size="22840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZwoUftH42mRHleZUoSuHPAlCgdaknRpq8Xa2g4tZPlU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Tmds.DBus.dll" size="191488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MN1t4yU4QkqiQSWt86XyycSby7PYeAuXqWFp7HiwYYc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Taggart Software LLC, O=Taggart Software LLC, STREET=&quot;945 McKinney St #12481&quot;, L=Houston, S=Texas, PostalCode=77002, C=US" issuerKeyHash="0ee13aa8533a31d58abec1bbad671a0385ad340e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>44AxPDRhcpI4awYM5XOjmwdL/UsM6WxweoqLwy5A3nI=</DigestValue></Reference></SignedInfo><SignatureValue>J8VfXy0rFtcnBYCCzA3Z8rTTU3q8rYUnL1z5D11CtFRoOgXJiV7LdMt4vmboELjlYSPjs+qQb6x0H8RjlFQ8pPeU1W3YjM7acmy6VZhQlQcy1uADFCyKliH3G1ZLEvNUKYvKZMXnSlnU/KC8nhBDyP989khOufj1vT29kqDN6gef+QaobjGjNq1G3k9Lso5wOmeIMrvn3ZkYPgD7gAGaSJWUJZIVvFkDWXGfa9CGT4nUS+VHr35S1DWpoiauuNnGzhhxacdKnHImCZFJgayLry8rE8oU07BxL2kkkkx+4B92x8ini/pCDGd53S3U9gk/Ilyg6lNp7ydlnrNOr4t3BbnuSCIC7Jlbj1ZrEwWBkA7GN7NqqFtT4OktsfwCCjOpLu050NuDOqb91HxJsDfgXMfzGSu66rNxJLei8cmUIIHjoJSZShWJPlfP7QOrGk3kEZXgNIOKsbvYVIgPyMEU3HaMqsovKd4h62Tt4iibae088GEvxUecOC0XRKApJ7IWPIYlVXhV+W/n7UM39omZejuCzqhD6xLMSTTy2AI9z2QJmKp81X3TtLdRSiXLGrgN4AFIkZJAun2+EimmXq+eDNVbbnC0gbZ7WOhH+OeE79VaQkZsgdKJmviLTJJzRHxC72XyIvTjSdb1cx2f7oj4gQU8QHCw9wMJyXK6tHk5pTY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rTnCEc3yjb073WrZMWPziOI4raV33E1KamaJZ4mtnMzVVGms+Oz2f5Cb4PNAhWvj1rwEf8WYUBE30BqRy1G85KTarf2waFyDLGd99gomCmUxS2Me0/GdKI85GluQjN/haZhrr9XceaDKy9a02Ij/1d+pWyyX25bXvawOFXw9N9dkzOy2RhU84LgF439vSniSkL79pDHTMNiJRyvnPml71j88bgIJBAeTt32vZTMzjRryiq2Uz0q4etSxogDDF8e5f5LVq52PZYgkfN2tTAlV0yYSYWmIfqhG0MP5Ar+0yDpi939H4xBHf8G1aTWmEdHzb67aR19SN5ehesZKV5aoKlSvus4pVZlyIn9pucYBvfGfvNoK9WcvWHPu3kV8tuJMkrGhnu1GCFOVIkKjW1QLFv7IKJP0O/JDGEByUX1AhFPtpCeWvedsZYZZUZY3Wt8IsaT/teZpCDkfQgPXWmE/QiNWERsxfCs0EyzPbcDYiw87sH5XoHKUAUv/9M1vxK6fReK4KqpOMGTA/+nQh7C7eXnNjBmP2Ih6NV78V3asqIdf2KbjvkmsK0vrmhbH/DTJkIlrgYovMwuLlLnbgIunIrurEr9Nsnn0vNRoq6enVeMOcrqvDuDTdTaVqsGq7PdraQISrUsYUUZsA0pYJRlJG3yZsUaMEVJ7TzC8ckdsu/U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="72de402ec38b8a7a706ce90c4bfd4b079ba373e50c066b38927261343c3180e3" Description="" Url=""><as:assemblyIdentity name="StructuredLogViewer.Avalonia.exe" version="2.1.215.0" publicKeyToken="68834d0d1784604a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Taggart Software LLC, O=Taggart Software LLC, STREET="945 McKinney St #12481", L=Houston, S=Texas, PostalCode=77002, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TqVi8L6Sxpj4RSaUFt/WddHHcivuwMLrUTxJpbfejy4=</DigestValue></Reference></SignedInfo><SignatureValue>OtQpFm6lPa/6lVbElVcXTmW7ExPtv/FumensKtHUlmHM7EXJe72B3JXi9n6R5jKYjjzw58W85UfrBugiPbmzHj85Bmbvr7j/dVWz19vWO9EPP5TTEMgfP2r+fOiaJ8/cnd8SCk4u6ws9yx+WQFSdzzevJzajWIxtN6Vig2l8hoqHfxK4WymqvbLQAdkzEsyGtOBTH/TRKbM8WnUwlqDcSAGck39XPLrk4Jl/sAbhiuyYSymO5gjHHWcRxdbL6evAXOak3jYpm5hwFa6GL+Xa+BQaLB/gJ+WILbISzLhwzGsBTj3oOywOZsFSODhK6mnCPUFi4s3x19QcrVzXUvngkl0sOmkWkwhWSWKpciq76j1YlTs2faKqxwq4bSsQhCpelgaCmPkmCMWMpe7B5j4d6TEmdhB3mAIuY9lEhmpZSwsl+AvGVPI/ejtr42PLZgoNQAYVt3W8R/R0x3uIBoOXb8TR5Cns78aKJKyboSPzM2JoAVa+lZV2U+Z7PV8kYCJmsbWVr60qO9Z9tXi9Sqee82/aT7Bsexxf2RkpFwXAub8izt68FjkMm4okq02GeSz+wOBeCSDkwuhUlnutDxJCEBVJf2ZzfUyXRFmO/EqhxKtEhH3T+VWdTkkuW3eZ2wokYC4pKd9PEc3uEuTY1EIJyZSBhDcBVmF3RNJmhA0gNDA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rTnCEc3yjb073WrZMWPziOI4raV33E1KamaJZ4mtnMzVVGms+Oz2f5Cb4PNAhWvj1rwEf8WYUBE30BqRy1G85KTarf2waFyDLGd99gomCmUxS2Me0/GdKI85GluQjN/haZhrr9XceaDKy9a02Ij/1d+pWyyX25bXvawOFXw9N9dkzOy2RhU84LgF439vSniSkL79pDHTMNiJRyvnPml71j88bgIJBAeTt32vZTMzjRryiq2Uz0q4etSxogDDF8e5f5LVq52PZYgkfN2tTAlV0yYSYWmIfqhG0MP5Ar+0yDpi939H4xBHf8G1aTWmEdHzb67aR19SN5ehesZKV5aoKlSvus4pVZlyIn9pucYBvfGfvNoK9WcvWHPu3kV8tuJMkrGhnu1GCFOVIkKjW1QLFv7IKJP0O/JDGEByUX1AhFPtpCeWvedsZYZZUZY3Wt8IsaT/teZpCDkfQgPXWmE/QiNWERsxfCs0EyzPbcDYiw87sH5XoHKUAUv/9M1vxK6fReK4KqpOMGTA/+nQh7C7eXnNjBmP2Ih6NV78V3asqIdf2KbjvkmsK0vrmhbH/DTJkIlrgYovMwuLlLnbgIunIrurEr9Nsnn0vNRoq6enVeMOcrqvDuDTdTaVqsGq7PdraQISrUsYUUZsA0pYJRlJG3yZsUaMEVJ7TzC8ckdsu/U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate><X509Certificate>MIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sIs9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnGvDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQIjy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfbIWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97Exwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNVicQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJWBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzGKAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSgEQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rIDZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAGBgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUAA4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+/czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gACiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1FzZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyAvGp4z7h/jnZymQyd/teRCBaho1+V</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
